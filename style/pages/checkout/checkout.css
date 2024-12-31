@@ -1,0 +1,266 @@
+body {
+  padding-top: 0px;
+}
+
+main {
+  max-width: 1100px;
+  margin-top: 140px;
+  margin-bottom: 100px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.title {
+  font-size: 23px;
+  font-weight: 600;
+
+  padding-bottom: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 350px;
+  column-gap: 12px;
+  row-gap: 12px;
+
+  align-items: start;
+}
+
+@media (max-width: 1000px) {
+  main {
+    max-width: 500px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+
+  }
+}
+
+.product-details-containor .product-containor {
+  border: 1px solid lightgray;
+  border-radius: 4px;
+  padding: 18px;
+  margin-bottom: 12px;
+}
+
+.product-details-containor .order-delivery-text {
+  color: green;
+  font-size: 18px;
+  font-weight: 600;
+
+  margin-bottom: 20px;
+}
+
+.product-details-containor .product-orders-grid {
+  display: grid;
+  grid-template-columns: 100px 1fr 1fr;
+  column-gap: 25px;
+}
+
+@media (max-width: 1000px) {
+  .product-details-containor .product-orders-grid {
+    grid-template-columns: 100px 1fr;
+    row-gap: 30px;
+  }
+}
+
+.product-orders-grid .produt-image {
+  height: 110px;
+  width: 110px;
+
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.product-image .product {
+  max-height: 100%;
+  max-width: 100%;
+  cursor: pointer;
+}
+
+.product-details .product-name {
+  font-weight: 600;
+  padding-bottom: 10px;
+}
+
+.product-details .product-price {
+  color: rgb(189, 55, 55);
+  font-weight: 600;
+  padding-bottom: 6px;
+}
+
+.product-details .quantity-delete {
+  display: flex;
+  align-items: center;
+}
+
+.quantity-delete .update-text,
+.delete-text, .quantity-save-link {
+  color: rgb(111, 111, 255);
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.update-text:hover,
+.delete-text:hover,
+.quantity-save-link:hover {
+  color: red;
+}
+
+.is-update-disapear .update-text {
+  display: none;
+}
+
+.quantity-save-link {
+  display: none;
+}
+
+.quantity-input { 
+  display: none;
+}
+
+.is-editing-quantity .quantity-input {
+  display: initial;
+
+  height: 20px;
+  width: 50px;
+
+  margin-left: 5px;
+
+  border: 2px solid rgb(254, 189, 105);
+  outLine-color: rgb(254, 189, 105);
+
+  cursor: pointer;
+}
+
+
+
+.is-editing-quantity .quantity-save-link {
+  display: initial;
+}
+
+.is-editing-quantity .quantity-label {
+  display: none;
+}
+
+.choose-delivery-containor .choose-delivery-text {
+  font-weight: 600;
+  padding-bottom: 10px;
+}
+
+@media (max-width: 1000px) {
+  .choose-delivery-containor {
+    grid-column: 1 / span 2;
+  }
+}
+
+.choose-day-containor .day-flex {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.checkbox-date .checkbox-input {
+  height: 19px;
+  width: 19px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.day-flex .day-shipping {
+  cursor: pointer;
+}
+
+.day-shipping .day-text {
+  color: green;
+  font-weight: 500;
+  margin-bottom: 3px;
+}
+
+.day-shipping .free-delivery-ornot {
+  color: rgb(120, 120, 120);
+  font-size: 15px;
+}
+
+.grid .order-summary-containor {
+  padding: 18px;
+
+  border: 1px solid lightgray;
+  border-radius: 4px;
+}
+@media (max-width: 1000px) {
+  .grid .order-summary-containor {
+    grid-row: 1;
+  }
+}
+
+
+.order-summary-containor .order-summary-text{
+  font-size: 18px;
+  font-weight: 600;
+
+  margin-bottom: 15px;
+}
+
+.items-shipping .product-summary-grid {
+  display: grid;
+  grid-template-columns: 1fr auto;
+
+  font-size: 15px;
+  margin-bottom: 9px;
+}
+
+.payment-summary {
+  text-align: right;
+}
+
+.total-before-tax .payment-summary {
+  border-top: 1px solid rgb(222, 222, 222)
+}
+
+.total-before-tax div {
+  padding-top: 9px;
+}
+
+.total-summary{
+  border-top: 1px solid rgb(222, 222, 222);
+}
+.total-summary div {
+  padding-top: 18px;
+
+  font-size: 18px;
+  font-weight: 600;
+  color: rgb(159, 0, 0);
+}
+
+.items-shipping .input-section {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.input-section .checkbox-input {
+  height: 20px;
+  width: 20px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+.items-shipping .place-order-button {
+  background-color: yellow;
+
+  margin-top: 20px;
+  margin-bottom: 19px;
+  
+  padding-top:  12px;
+  padding-bottom: 12px;
+  width: 100%;
+
+  border-radius: 8px;
+  border: 1px solid rgb(252, 210, 0);
+  box-shadow: 0px 2px 5px rgba(213, 217, 217, 0.5);
+  cursor: pointer;
+}

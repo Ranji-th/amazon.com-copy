@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    
+    <title>Amazon Project By Ranjith</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale= 1">
+
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+
+    <!--CSS files-->
+    <link rel="stylesheet" href="style/pages/amazon.css">
+    <link rel="stylesheet" href="style/shared/Header.css">
+    <link rel="stylesheet" href="style/shared/general.css">
+
+
+  </head>
+  <body>
+    
+    <!--Header-->
+    <div class="header">
+      <!--Left SECTION, AMAZON LOGOS-->
+      <section class="left-section">
+        <a  href="amazon.html" class="logos">
+          <img class="amazon-logo-white" src="/images/amazon-logo-white.png"> 
+          <img class="amazon-mobile-logo" src="/images/amazon-mobile-logo-white.png">
+        </a>
+      </section>
+
+      <!--SEARCH SECTION , MIDDLE SECTION-->
+      <section class="middle-section">
+        <input class="search-input js-search-bar" placeholder="Search">
+        <button class="search-button js-search-button">
+          <img class="search-icon" src="/images/icons/search-icon.png">
+        </button>
+      </section>
+
+      <!--CART SECTION, RIGHT SECTION-->
+      <section class="right-section">
+        <a href="orders.html" class="return-section">
+          <span class="returns-text">Returns</span>
+          <span class="orders-text">& Orders</span>
+        </a>
+
+        <a href="checkout.html" class="cart-section">
+          <img class="cart-icon" src="/images/icons/cart-icon.png">
+          <div class="cart-quantity js-cart-quantity"></div>
+          <div class="cart-text">Cart</div>
+        </a>
+
+        <img class="hamburger-logo" src="/images/icons/hamburger-menu.png">
+      </section>
+    </div>
+
+    <!--product section-->
+    <div class="grid js-product-grid">
+    </div>
+
+
+    <!--JavaScript File-->
+    <script type="module" src="script/amazon.js"></script>
+  </body>
+</html>
